@@ -1,33 +1,20 @@
 import { useState } from 'react'
 import './Home.css';
 
-function home() {
+function Home() {
 
 const [players, updatePlayers] = useState([]);
 
     return (
      <div className="homeScreen">
-        <div>
-            <h1>Marietta Country Club</h1>
-            <form>
-                <TextField
-                required
-                id="outlined-required"
-                label="Name"
-                defaultValue=""
-                />
-                <TextField
-                required
-                id="outlined-required"
-                label="Email"
-                defaultValue=""
-                />
-            </form>
-        </div>
-
+        
+        
+        <img width="2000" src="https://clubandresortbusiness.com/wp-content/uploads/2021/09/Marietta-Country-Club.jpg"></img>
      </div>
 
 
 
-    )
+    );
 }
+
+export default Home

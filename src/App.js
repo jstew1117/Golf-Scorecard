@@ -1,41 +1,50 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
-import MountainView from './components/mountainView';
-import LakeView from './components/lakeView';
+import Home from './components/Home';
+import Scorecard from './components/Scorecard';
+import Submit from './components/Submit';
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
 
 function App() {
 
-  const [courseScores, setCourseScores] = useState({"mountainView": 0, "lakeView":0});
-  const [totalScore, setTotalScore] = useState(0);
-  
-let updateCourseScore = (course, score) => {
-  let newCourseScores = {...courseScores};
-  newCourseScores[course] = score
-  setCourseScores(newCourseScores)
-}
 
-  useEffect(() => {
-    const sum = courseScores['mountainView']+courseScores["lakeView"]
-    setTotalScore(sum);
-  }, [courseScores]);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          Marietta Country Club
-        </div>
-        <div></div>
-      </header>
-      <MountainView updateCourseScores={updateCourseScore}/>
-      <LakeView updateCourseScores={updateCourseScore}/>
+    <div>
+      <div className="App">
+        <header className="App-Header">
+          <div><h1>Marietta Country Club</h1></div>
+    <Router>
       <div>
-totalScore: {totalScore}
+        <nav>
+          <Link to='/'>Home</Link>
+          <br />
+          <br />
+          <Link to='/Scorecard'>Scorecard</Link>
+          <br />
+          <br />
+        </nav>
       </div>
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Scorecard" element={<Scorecard />} />
+        <Route path="/Submit" element={<Submit />} />
+      </Routes>
+
+    </Router>
+    </header>
     </div>
+    
+    </div>
+
 
 
 

@@ -11,7 +11,7 @@
  font-size: 30px;
 }
 
-.Mountain-View, .Lake-View{
+.Mountain-View, .Lake-View, .Overlook{
  display: flex;
  flex-direction: row;
  gap: 10px;
