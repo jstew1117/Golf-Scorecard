@@ -6,10 +6,10 @@ function Home() {
 const [players, updatePlayers] = useState([]);
 
     return (
-     <div className="homeScreen">
+        <div className="homeScreen">
         
         
-        <img width="2000" src="https://clubandresortbusiness.com/wp-content/uploads/2021/09/Marietta-Country-Club.jpg"></img>
+        <img width="1800" src="https://ksuowls.com/images/2022/6/17/IMG_7593.jpeg?width=1000&height=563&mode=crop"></img>
      </div>
 
 

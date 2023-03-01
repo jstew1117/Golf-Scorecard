@@ -18,6 +18,7 @@ function Overlook(props) {
   }, [holes]);
 
   return (
+<div><h1>Overlook</h1>
 
     <div class="Overlook">
 
@@ -108,6 +109,8 @@ function Overlook(props) {
         <div>{totalScore}</div>
 
       </div>
+
+    </div>
 
     </div>
 

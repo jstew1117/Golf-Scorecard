@@ -20,7 +20,7 @@ function MountainView(props) {
     
      return (
         
-       
+       <div><h1>Mountain View</h1>
           <div class="Mountain-View">
     
             <div style={{display: 'flex', flexDirection: 'column'}}>
@@ -111,6 +111,7 @@ function MountainView(props) {
             
             </div>
     
+          </div>
           </div>
         
     

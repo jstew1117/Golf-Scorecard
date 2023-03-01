@@ -18,6 +18,7 @@ function LakeView(props) {
     }, [holes]);
   
   return(
+    <div><h1>Lake View</h1>
   <div class="Lake-View">
   <div style={{display: 'flex', flexDirection: 'column'}}>
     <div>Hole:</div>
@@ -107,6 +108,7 @@ function LakeView(props) {
   
   </div>
   
+  </div>
   </div>
   );
   };
