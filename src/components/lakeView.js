@@ -15,7 +15,7 @@ function LakeView(props) {
       const sum = holes.reduce((a, b) => a + b, 0);
       setTotalScore(sum);
       props.updateCourseScores("lakeView",sum)
-    }, [holes]);
+    }, [holes, props]);
   
   return(
     <div><h1>Lake View</h1>

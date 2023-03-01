@@ -15,7 +15,7 @@ function Overlook(props) {
     const sum = holes.reduce((a, b) => a + b, 0);
     setTotalScore(sum);
     props.updateCourseScores("Overlook", sum)
-  }, [holes]);
+  }, [holes, props]);
 
   return (
 <div><h1>Overlook</h1>

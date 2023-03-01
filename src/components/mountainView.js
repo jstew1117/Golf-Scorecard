@@ -16,7 +16,7 @@ function MountainView(props) {
       const sum = holes.reduce((a, b) => a + b, 0);
       setTotalScore(sum);
       props.updateCourseScores("mountainView",sum)
-    }, [holes]);
+    }, [holes, props]);
     
      return (
         

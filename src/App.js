@@ -7,7 +7,7 @@ import Submit from './components/Submit';
 import LoginForm from './components/LoginForm';
 import Button from '@mui/material/Button';
 
-import backgroundImage from './components/scorecardlogo.jpg';
+
 
 
 import {

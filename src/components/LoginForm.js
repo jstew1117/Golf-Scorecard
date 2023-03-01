@@ -29,7 +29,7 @@ function LoginForm(props) {
       body: JSON.stringify(login)
     }).then(res => res.json()).then(serverResponse => {
       console.log(serverResponse)
-      if(serverResponse.id!=undefined) {
+      if(serverResponse.id!==undefined) {
         props.updateUserId(serverResponse.id)
       }else{
         alert(serverResponse.error)
@@ -51,7 +51,7 @@ function LoginForm(props) {
       body: JSON.stringify(signIn)
     }).then(res => res.json()).then(serverResponse => {
       console.log(serverResponse)
-      if(serverResponse.id!=undefined) {
+      if(serverResponse.id!==undefined) {
         props.updateUserId(serverResponse.id)
       }else{
         alert(serverResponse.error)
