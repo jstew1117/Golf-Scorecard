@@ -14,8 +14,8 @@ function Overlook(props) {
   useEffect(() => {
     const sum = holes.reduce((a, b) => a + b, 0);
     setTotalScore(sum);
-    props.updateCourseScores("Overlook", sum)
-  }, [holes, props]);
+    props.updateCourseScores("Overlook", sum)// eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [holes]);
 
   return (
 <div><h1>Overlook</h1>

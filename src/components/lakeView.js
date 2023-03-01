@@ -14,8 +14,8 @@ function LakeView(props) {
     useEffect(() => {
       const sum = holes.reduce((a, b) => a + b, 0);
       setTotalScore(sum);
-      props.updateCourseScores("lakeView",sum)
-    }, [holes, props]);
+      props.updateCourseScores("lakeView",sum)// eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [holes]);
   
   return(
     <div><h1>Lake View</h1>

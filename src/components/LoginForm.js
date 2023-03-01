@@ -21,7 +21,7 @@ function LoginForm(props) {
     event.preventDefault();
     console.log(login)
 
-    fetch('http://localhost:3001/login', {
+    fetch('https://marietta-scorecard.onrender.com/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ function LoginForm(props) {
     event.preventDefault();
     console.log(signIn)
 
-    fetch('http://localhost:3001/signup', {
+    fetch('https://marietta-scorecard.onrender.com/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

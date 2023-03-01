@@ -31,7 +31,7 @@ function App() {
   function printScore(score) {
     updateSubmitScore(score)
 
-    fetch(`http://localhost:3001/user/${userId}/score`, {
+    fetch(`https://marietta-scorecard.onrender.com/user/${userId}/score`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

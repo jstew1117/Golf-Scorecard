@@ -15,8 +15,8 @@ function MountainView(props) {
     useEffect(() => {
       const sum = holes.reduce((a, b) => a + b, 0);
       setTotalScore(sum);
-      props.updateCourseScores("mountainView",sum)
-    }, [holes, props]);
+      props.updateCourseScores("mountainView",sum)// eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [holes]);
     
      return (
         
